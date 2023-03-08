@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CONTACTO, UBICACION, HORARIOS, CALLE">
+    <meta name="description" content="Podes encontrarnos en nuestras oficinas o contactarte via mail.">
+    <title>Contacto</title>
+    <!--link de BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--link de js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--link de mi CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+<body>
+    <header> 
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/ensa.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="monitoreo-satelital.html">Monitoreo Satelital</a>
+              </li>
+            
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-contacto">
+
+      <div class="parteuno-contacto">
+
+    <p class="pctc">Contactanos de manera personal en nuestras oficinas de la calle Acha 452 en la ciudad de Mar del Plata o envianos un mensaje completanos los campos que aparecen a continuación.</p> 
+        
+      <img class="mapa" src="img/mapa.png" weight="250px" alt="plano" >
+      </div>  
+    
+      <div class="img-contacto">     
+        <img class="lugar" src="img/lugar-2.png" width="350px" alt="lugar">
+
+    <img class="lugar" src="img/lugar.png" width="400px" alt="lugar">
+    </div>
+      <form>
+    <label for="nombre">Nombre y apellido:</label>
+    <input type="text" id="nombre" placeholder="ej. Juan Perez">
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" placeholder="Ingrese aqui su email">
+    <select name="Tipo de buque">
+        <option value="Pesquero">Pesquero</option>
+        <option value="Mercante">Mercante</option>
+        <option value="Militar">Militar</option>
+        <option value="Recreativo">Recreativo</option>
+    </select>
+    <textarea cols='420' rows='10' placeholder='Escriba aquí su Mensaje'></textarea>
+    <input type="submit" class="boton-propio" value="Enviar">
+</form>
+</main>
+<footer>
+  <p>Todos los derechos reservados.</p>
+  <a href="https://www.linkedin.com/company/electronicanaval/mycompany/">
+  <img src="img/linkedin.png" alt="linkedin de ensa">
+</a>
+
+</footer>
+</body>
+</html>

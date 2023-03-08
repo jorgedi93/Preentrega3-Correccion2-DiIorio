@@ -1,0 +1,4 @@
+@mixin presentacion ($forma, $direccion) {
+    display: $forma;
+    flex-direction: $direccion;
+}

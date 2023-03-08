@@ -1,0 +1,259 @@
+.main-nosotros .comienzos h3, .main-nosotros .Ensa h3, .main-nosotros .seaman h3 {
+  text-align: center; }
+
+.main-nosotros .comienzos p, .main-nosotros .Ensa p, .main-nosotros .seaman p {
+  margin: 20px;
+  text-align: justify; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*estilos del menu*/
+header nav {
+  background-image: linear-gradient(gray, #5e5d5d); }
+  header nav ul li:hover {
+    transform: scale(1.1); }
+
+.main-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-index .h2-index {
+    display: flex;
+    flex-direction: column; }
+  .main-index .h3-index {
+    display: flex;
+    flex-direction: column; }
+  .main-index img {
+    display: block;
+    width: 60%; }
+
+/*estilos del footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem; }
+
+/*estilo notebook*/
+@media screen and (min-width: 1024px) {
+  .main-index {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "h2 img" "h2 img" "h3 img" "h3 img";
+    justify-content: center;
+    justify-items: center; }
+    .main-index .h2-index {
+      grid-area: h2; }
+    .main-index .h3-index {
+      grid-area: h3; }
+    .main-index img {
+      width: 100%;
+      grid-area: img; } }
+
+/*estilos de nosotros*/
+/*estilo celular*/
+.main-nosotros {
+  background-image: linear-gradient(rgba(5, 12, 7, 0.75), rgba(5, 12, 7, 0.75)), url(../img/labelectronica.jpg);
+  height: 1800px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: beige; }
+  .main-nosotros .nosotros h2 {
+    text-align: center;
+    gap: 1rem; }
+  .main-nosotros .nosotros p {
+    margin: 20px;
+    text-align: justify; }
+
+.img-nosotros {
+  margin: 0px;
+  padding: 2rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "en1 " "en2" "en3";
+  justifify-items: center;
+  align-items: center; }
+
+/*estilo notebook*/
+@media screen and (min-width: 1024px) {
+  .nosotros {
+    text-align: center; }
+  .historia {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; }
+  .img-nosotros {
+    margin: 0px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "en1 en2 en3";
+    justify-content: center;
+    justify-items: center; } }
+
+.en1 {
+  grid-area: en1; }
+
+.en2 {
+  grid-area: en2; }
+
+.en3 {
+  grid-area: en3; }
+
+/*estilos servicio*/
+.main-servicio {
+  background-color: #555454; }
+  .main-servicio .hserv {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+  .main-servicio .nuestros-servicios {
+    margin: 0px;
+    padding: 2rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "tser " "jrc" "fur";
+    justifify-items: center;
+    align-items: center;
+    color: white; }
+  @media screen and (min-width: 1024px) {
+    .main-servicio {
+      margin: 0px;
+      padding: 2rem;
+      gap: 2rem;
+      display: grid;
+      grid-template-columns: 75% 25%;
+      grid-template-rows: auto;
+      grid-template-areas: "tser jrc" "tser fur";
+      justifify-items: center;
+      align-items: center;
+      color: black; } }
+  .main-servicio .tser {
+    grid-area: tser; }
+  .main-servicio .jrcimg {
+    grid-area: jrc; }
+  .main-servicio .furunoimg {
+    grid-area: fur; }
+  .main-servicio .boton-propio {
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: inline-block;
+    color: white;
+    background-color: black; }
+  .main-servicio .boton-propio:hover {
+    background-color: gray; }
+
+/*estilos del monitoreo satelital*/
+.main-isat {
+  background-image: linear-gradient(rgba(5, 12, 7, 0.75), rgba(5, 12, 7, 0.75)), url(../img/inmarsat.jpg);
+  height: 1150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: beige;
+  margin: 0px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "t " "p1" "img1" "p2" "img2" "p3" "img3";
+  justifify-items: center; }
+  @media screen and (min-width: 1024px) {
+    .main-isat {
+      margin: 0px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-template-areas: "t t" "p1 img1" "p2 img2" "p3 img3";
+      justifify-items: center;
+      align-items: center; } }
+
+.titmon {
+  grid-area: t; }
+
+.inmsat {
+  grid-area: p1; }
+
+.inmsat-c {
+  grid-area: p2; }
+
+.fleetone {
+  grid-area: p3; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+/*esilos del formulario*/
+.main-contacto {
+  background-color: gray;
+  padding: 15px;
+  font-size: large;
+  color: white; }
+  .main-contacto .parteuno-contacto {
+    margin: 0px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "p1" "imgctc";
+    justifify-items: center; }
+    @media screen and (min-width: 1024px) {
+      .main-contacto .parteuno-contacto {
+        margin: 0px;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto;
+        grid-template-areas: "p1 imgctc";
+        justifify-items: center;
+        align-items: center; } }
+    .main-contacto .parteuno-contacto .pctc {
+      grid-area: p1; }
+    .main-contacto .parteuno-contacto .mapa {
+      grid-area: imgctc; }
+  .main-contacto .img-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+    @media screen and (min-width: 1024px) {
+      .main-contacto .img-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem; } }
+
+form {
+  margin: 10px; }
+  form input {
+    margin: 5px;
+    border-radius: 3px; }
+
+footer {
+  background-color: red;
+  margin: 0;
+  padding: 0.5rem; }
